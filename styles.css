@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  
+     font-family: "Exo 2", sans-serif;
+   
+color: #bbb8b8;
+  background-color: #000000;
+scroll-behavior: smooth;
+
+font-size: 20px;
+  font-weight: 100px;
+  line-height: 1.5;
+letter-spacing: -0.5px;
+margin: 0;
+}
+a {
+ color: #bdbaba;
+text-decoration: none;
+
+transition: opacity 0.4s;
+
+
+}
+a:hover {
+opacity: 0.6;
+
+}
+
+
+ 
+ .container {
+position: relative;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left:auto;
+  padding: 30px;
+   isolation: isolate;
+
+
+
+ }
+.maincontainer {
+ 
+ position: relative;
+top: 120px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header {
+  opacity: 80%;
+position: fixed;     /* фиксирует элемент */
+  top: 0;              /* закрепляет сверху */
+  left: 0;
+  width: 100%;         /* на всю ширину */
+      /* фон, чтобы текст не перебивался */
+  padding: 6px 20px;
+  box-shadow: 0 2px 10px rgba(131, 131, 131, 0.1); /* красивая тень */
+  z-index: 10;    
+background: #000000;
+backdrop-filter: blur(50px);
+
+
+
+}
+
+.header .container {
+ display: flex;
+ align-items: center;
+justify-content:space-between 
+
+}
+
+
+.hname {
+
+display: flex;
+font-weight: 300;
+font-size: 16px;
+
+}
+
+
+
+
+.hnav {
+  display: flex;
+  gap: 70px;
+font-weight: 300;
+font-size: 16px;
+
+
+}
+
+.hlink {
+
+}
+
+
+.main {
+padding-top: 50px;
+}
+
+
+.mainimage {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  }
+
+.main__title {
+ gap: 50px;
+  margin-right: 100px;
+  
+
+position: relative;
+  z-index: 2; /* текст сверху */
+  font-size: 80px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  line-height: 0.9; /* плотные строки */
+  mix-blend-mode: difference; /* стильный эффект смешивания */
+
+
+
+}
+
+.main__title span {
+  display: block;      
+     /* каждая строка — отдельный блок */
+}
+
+  
+.main__title span:nth-child(2) {
+  margin-left: 130px;       /* вторая строка правее */
+}
+
+.main__title span:nth-child(3) {
+  margin-left: 380px;       /* третья строка ещё правее */
+}
+
+.main__text {
+  position: relative;
+  
+
+ top: 230px;
+  color: #ffffff;
+  text-align: center;
+ 
+  mix-blend-mode: difference;
+  font-weight: 200;
+  
+
+}
+
+
+/* about */
+
+.about .aboutcontainer {
+
+display: flex;
+align-items: center; 
+ justify-content: space-between; 
+
+}
+
+.aboutcontainer {
+
+
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left:auto;
+  padding: 40px;
+   
+   font-weight: 300; 
+font-size: 28px;
+width: 500px ;
+   
+  align-items: center; 
+ justify-content:space-between ; 
+
+
+
+
+}
+
+.download-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;              /* расстояние между текстом и стрелкой */
+    
+    padding: 12px 30px;
+     margin-left: 50px;
+     margin-bottom: 25px;
+
+    background-color: #e63946; 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+
+.cv-button:hover {
+    background-color: #ff4f5e;
+    transform: translateY(-2px);
+}
+
+.download-icon {
+    width: 22px;
+    height: 22px;
+}
+
+
+.abouttitle {
+
+ 
+color: #fffefe;
+  font-weight: 400; 
+padding-left:45px ;
+margin-top: 500px;
+width: 700px ; 
+}
+.abouttext {
+padding-left:50px ;
+z-index: 2;
+
+width: 300px;
+
+font-weight: 300; 
+font-size: 16px;
+}
+
+#about {
+  scroll-margin-top: -300px;
+  scroll-behavior: smooth;
+}
+.aboutimage {
+ 
+margin-left: -180px;
+border-radius: 5%;
+width: 450px;
+object-position: left;
+padding-top: 400px;
+
+
+   
+  
+  z-index: 1;
+  object-fit: cover; 
+
+}
+
+
+.cbtn {
+
+}
+
+.contact__button {
+
+}
+
+
+
+/* skills */
+
+.skills {
+
+text-align: center;
+font-weight: 400; 
+font-size: 40px;
+padding-bottom: 100px;
+color: #fffefe;
+ 
+
+}
+.skillscontainer {
+
+  padding-top: 200px;
+}
+
+.icons-row {
+  display: flex;               
+  justify-content: space-around; 
+  align-items: center;         
+  margin: 50px 0;
+  
+}
+
+.icon-item {
+  text-align: center;          
+}
+
+.icon-item img {
+  width: 90px;                 
+  
+  display: block;
+  margin-bottom: 10px;         
+}
+
+.icon-item p {
+  font-size: 14px;
+  color: #c6c3c3;
+  margin: 0;
+}
+
+/* works */
+
+.sectionworks {
+
+  padding-top: 300px;
+}
+
+.Projekte {
+
+  text-align: center;
+font-weight: 400; 
+font-size: 40px;
+padding-top: 20px;
+color: #fffefe;
+}
+
+
+.videos {
+    display: flex;
+          
+          padding: 50px;  
+    align-items: flex-start;
+    justify-content: space-around
+}
+
+video.vertical {
+  
+    width: 250px;   /* маленькие */
+    height: auto;
+}
+
+video.horizontal {
+  padding-bottom: 35px;
+    width: 790px;   /* увеличенные */
+    height: auto;
+}
+
+
+/* contact */
+
+ .contact__button {
+
+opacity: 60%;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;              /* расстояние между текстом и стрелкой */
+    
+    padding: 12px 30px;
+   margin-top: 110px;
+margin-left: 617px;
+    background-color: #e63946; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+
+.contact__button:hover {
+    background-color: #ff4f5e;
+    transform: translateY(-2px);
+
+ }
+ .socials {
+    display: flex;
+    gap: 20px; /* расстояние между иконками */
+    margin-top: 20px;
+}
+.footer {
+
+display: flex;
+align-items: center;
+ justify-content: space-between; 
+
+
+}
+.footer__copy {
+
+  font-size: 14px ;
+  margin-top: 120px;
+}
+
+.socials__img {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
